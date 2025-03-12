@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="614.0" style="-fx-background-image: url(https://static.vecteezy.com/system/resources/thumbnails/046/085/204/small_2x/a-detailed-look-at-the-tingedge-technology-behind-a-stadiums-energyefficient-led-lighting-design-photo.jpg);-fx-background-size: cover;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.ClubLoginWindowController">
+   <children>
+      <Label fx:id="titleLabelFirstLine" layoutX="97.0" layoutY="93.0" text="INDIAN PREMIER LEAGUE">
+         <font>
+            <Font name="Algerian" size="36.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.44696971864411317" endY="0.5113636395244885" startX="0.44696963194644834" startY="0.26893944541613246">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.8462963104248047" blue="0.07777778059244156" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="1.0" green="0.8470588326454163" blue="0.0784313753247261" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9176470637321472" green="0.8666666746139526" blue="0.658823549747467" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="TitleLabelSecondLine" layoutX="146.0" layoutY="139.0" text="DATABASE SYSTEM">
+         <font>
+            <Font name="Algerian" size="36.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.7234848502910498" startX="1.0" startY="0.3371211976716013">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.8333333134651184" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9176470637321472" green="0.8666666746139526" blue="0.658823549747467" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="loginButton" layoutX="239.0" layoutY="313.0" mnemonicParsing="false" onAction="#login" text=" LOGIN" textFill="#1f8abc">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow spread="0.72">
+               <color>
+                  <Color red="0.12941177189350128" green="0.6039215922355652" blue="0.7607843279838562" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <Button fx:id="resetButton" layoutX="326.0" layoutY="313.0" mnemonicParsing="false" onAction="#reset" text="RESET" textFill="#1f8abc">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow spread="0.8">
+               <color>
+                  <Color red="0.12941177189350128" green="0.6039215922355652" blue="0.7607843279838562" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <ChoiceBox fx:id="usernameChoiceBox" layoutX="261.0" layoutY="231.0" prefWidth="150.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.16296295821666718" green="0.7767901420593262" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect></ChoiceBox>
+      <Label layoutX="194.0" layoutY="228.0" text="TEAM">
+         <font>
+            <Font name="Impact" size="21.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.5946969701485201" startX="0.27651517318956775" startY="0.44318181095701276">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.8765432238578796" blue="0.25925925374031067" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView blendMode="MULTIPLY" fitHeight="85.0" fitWidth="98.0" layoutX="258.0" layoutY="8.0">
+         <image>
+            <Image url="@../pic/download.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

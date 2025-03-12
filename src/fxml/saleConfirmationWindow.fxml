@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="118.0" prefWidth="555.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.SaleConfirmationWindowController">
+   <children>
+      <Label fx:id="playerNameLabel" layoutX="156.0" layoutY="33.0" text="Are you sure  you want to sell" AnchorPane.leftAnchor="156.0">
+         <font>
+            <Font name="Impact" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="confirmSaleButton" layoutX="180.0" layoutY="72.0" mnemonicParsing="false" onAction="#confirmSale" style="-fx-background-color: black;" text="Confirm Sale" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="273.0">
+         <font>
+            <Font name="Impact" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <textFill>
+            <LinearGradient endX="0.5568182612910415" endY="0.9204545152006726" startX="0.5530303084489071" startY="0.43181823961662524">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.49473685026168823" green="0.47458088397979736" blue="0.47458088397979736" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Button>
+      <Button fx:id="undoSaleButton" layoutX="299.0" layoutY="72.0" mnemonicParsing="false" onAction="#undoSale" style="-fx-background-color: black;" text="Undo Sale">
+         <font>
+            <Font name="Impact" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <textFill>
+            <LinearGradient endX="0.5568182612910415" endY="0.9204545152006726" startX="0.5530303084489071" startY="0.43181823961662524">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.49473685026168823" green="0.47458088397979736" blue="0.47458088397979736" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Button>
+   </children>
+</AnchorPane>
